@@ -1,18 +1,19 @@
 #!/usr/bin/python3
+"""a square class with private instance attribute"""
+
+
 class Square:
-    '''a square class with private instance attribute
+    """initialize size of square
     Attributes:
         __size (int): size of a side of the square
-    '''
-
+    """
     def __init__(self, size=0):
-        '''initialize size of square
+        """initializes the square
         Args:
-            size (int): size of side of square
+            size (int): size of a side of the square
         Returns:
             None
-        '''
-
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         else:
