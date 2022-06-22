@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 class Square:
-    '''a square class with private instance attribute'''
+    '''a square class with private instance attribute
+    Attributes:
+        __size (int): size of a side of the square
+    '''
 
     def __init__(self, size=0):
         '''initialize size of square
