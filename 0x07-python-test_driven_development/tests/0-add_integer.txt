@@ -49,11 +49,6 @@ Error with None:
        Traceback (most recent call last):
        TypeError: a must be an integer
 
-Error with nan:
-       >>> add_integer(float('nan'))
-       Traceback (most recent call last):
-       ValueError: cannot convert float NaN to integer
-
 Sum of list with int:
        >>> add_integer([1, 2, 3], 1)
        Traceback (most recent call last):

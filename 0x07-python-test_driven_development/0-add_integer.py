@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-
-
 '''
    0-add_integer function
    a function that adds two integers
+   raises TypeError for non ints
 '''
 
 
 def add_integer(a, b=98):
     '''
-    a function to return sum of two integers
+    a function to return sum of two integers, converts floats to int
     '''
     if type(a) is int or type(a) is float:
         if type(b) is int or type(b) is float:
