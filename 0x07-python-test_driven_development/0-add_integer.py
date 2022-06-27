@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-   0-add_integer function
+   0-add_integer module
    a function that adds two integers
    raises TypeError for non ints
 '''
