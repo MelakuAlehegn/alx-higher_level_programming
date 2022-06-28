@@ -38,5 +38,5 @@
 * The length of your files will be tested using wc
 
 
-* Author
+## Author
 - [Melaku Alehegn](https://github.com/MelakuAlehegn)
