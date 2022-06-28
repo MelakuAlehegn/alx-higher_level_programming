@@ -37,4 +37,6 @@
 * All your files must be executable
 * The length of your files will be tested using wc
 
-[author]{https://github.com/MelakuAlehegn/}
+
+* Author
+{Melaku Alehegn}[https://github.com/MelakuAlehegn/]
