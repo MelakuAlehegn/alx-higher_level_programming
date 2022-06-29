@@ -22,10 +22,11 @@ class Rectangle:
                 for w in range(self.height - 1):
                     print('#' * self.__width)
                 return '#' * self.width
-    
+
     def __repr__(self):
         x = 'Rectangle(' + str(self.width) + ', ' + str(self.height) + ')'
         return x
+
     @property
     def height(self):
         '''getter for height of rectangle'''
