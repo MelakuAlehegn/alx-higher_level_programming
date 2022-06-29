@@ -9,10 +9,13 @@ class Rectangle:
     a rectangle class to define a rectange with setter
     and getter methods for height and width
     '''
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         '''initializes the class attributes'''
         self.width = width
         self.height = height
+        type(self).number_of_instances += 1
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
@@ -29,6 +32,7 @@ class Rectangle:
 
     def __del__(self):
         print('{}'.format('Bye rectangle...'))
+        type(self).number_of_instances -= 1
 
     @property
     def height(self):
