@@ -90,9 +90,9 @@ class Rectangle:
         static method that returns the biggest recrtangle
         raises TypeError is args are not instances
         '''
-        if type(rect_1) is not Rectangle:
+        if not isinstance(rect_1, Rectangle):
             raise TimeoutError('rect_1 must be an instance of Rectangle')
-        if type(rect_2) is not Rectangle:
+        if not isinstance(rect_2, Rectangle):
             raise TimeoutError('rect_2 must be an instance of Rectangle')
         a1 = rect_1.area()
         a2 = rect_2.area()
