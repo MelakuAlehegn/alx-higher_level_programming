@@ -8,7 +8,5 @@ def is_same_class(obj, a_class):
     '''
     checks if obj is object of a_class
     '''
-    if issubclass(a_class, type(obj)):
-        return True
-    else:
-        False
+    return issubclass(a_class, type(obj))
+
