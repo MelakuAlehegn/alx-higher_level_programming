@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-a module that checks if an object of a specified class
+a module that checks if an object is exactly instance of of a specified class
 '''
 
 
