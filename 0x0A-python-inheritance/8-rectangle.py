@@ -7,7 +7,7 @@ a module for rectange
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Reactangele:
+class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         '''private instantiation of attributes
            validate type with integer_validator
