@@ -12,5 +12,4 @@ def write_file(filename="", text=""):
     Returns: number of chars written
     '''
     with open(filename, 'w+') as f:
-        writes = f.write(text)
-        return writes
+        return(f.write(text))
