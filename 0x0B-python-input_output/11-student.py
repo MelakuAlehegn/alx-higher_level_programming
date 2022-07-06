@@ -16,6 +16,7 @@ class Student:
             if hasattr(self, items):
                 my_dict[items] = getattr(self, items)
         return my_dict
+
     def reload_from_json(self, json):
         for items in json:
             self.__dict__[items] = json[items]
