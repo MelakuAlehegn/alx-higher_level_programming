@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-14-main - Pascals Triangle
+Pascals Triangle
 """
 
 
