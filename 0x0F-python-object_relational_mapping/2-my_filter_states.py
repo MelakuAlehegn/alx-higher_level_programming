@@ -12,8 +12,7 @@ if __name__ == "__main__":
     curr = db_con.cursor()
     curr.execute("SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY id ASC".format(sys.argv[4]))
     states = curr.fetchall()
-    print(states[0])
-    # for state in states:
-    #     print(state)
+    for state in states:
+        print(state[0])
     curr.close()
     db_con.close()
