@@ -14,6 +14,7 @@ if __name__ == "__main__":
     ORDER BY id ASC".format(sys.argv[4]))
     states = curr.fetchall()
     for state in states:
-        print(state[0])
+        if state[1] == sys.argv[4]:
+            print(state)
     curr.close()
     db_con.close()
