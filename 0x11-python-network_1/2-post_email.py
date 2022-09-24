@@ -11,7 +11,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
     # print(email)
-    data ={'email': email}
+    data = {'email': email}
     edata = urllib.parse.urlencode(data).encode('utf-8')
     req = urllib.request.Request(url, edata)
     with urllib.request.urlopen(req) as response:
