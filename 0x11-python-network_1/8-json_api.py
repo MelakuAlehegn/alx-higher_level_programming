@@ -13,9 +13,9 @@ if __name__ == "__main__":
         q = ""
     r = requests.post('https://httpbin.org/post', data={'value':q})
     try:
-        if r.json == {}:
+        if r.json() == {}:
             print('No result')
         else:
-            print("[{}] {}".format(r.json.get('id'), r.json.get('name')))
+            print("[{}] {}".format(r.json().get('id'), r.json().get('name')))
     except ValueError:
         print('Not a valid JSON')
