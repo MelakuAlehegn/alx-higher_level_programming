@@ -12,4 +12,7 @@ if __name__ == "__main__":
     url = f"https://api.github.com/users/{sys.argv[1]}"
     res = requests.get(url,  auth=requests.auth.
                        HTTPBasicAuth('{sys.argv[1]}', '{sys.argv[2]}'))
-    print(res.json().get('id'))
+    if res.status_code >= 400:
+        print('None')
+    else:
+        print(res.json().get('id'))
