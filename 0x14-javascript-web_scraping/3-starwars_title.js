@@ -7,5 +7,5 @@ request(`https://swapi-api.hbtn.io/api/films/${id}`, function (error, response, 
   if (error) {
     console.error(error);
   }
-  console.log('body:', JSON.parse(body).title);
+  console.log(JSON.parse(body).title);
 });
